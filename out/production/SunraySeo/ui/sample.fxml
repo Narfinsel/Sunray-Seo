@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <bottom>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="1400.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="590.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Open" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="15.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Populate">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin></Button>
+                  <Button layoutX="118.0" layoutY="20.0" mnemonicParsing="false" text="Create &amp; Populate">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <HBox prefHeight="90.0" prefWidth="841.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Overwrite Element" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="250.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" text="Save All" textAlignment="RIGHT">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <Pane prefHeight="518.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <Pane prefHeight="50.0" prefWidth="200.0" visible="false" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Pane prefHeight="950.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1095.0">
+               <effect>
+                  <DropShadow />
+               </effect></Pane>
+            <GridPane alignment="TOP_CENTER" hgap="10.0" layoutY="6.0" prefHeight="643.0" prefWidth="1077.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="310.0" minWidth="130.0" prefWidth="201.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="597.0" minWidth="10.0" prefWidth="267.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="597.0" minWidth="4.0" prefWidth="178.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="177.0" prefWidth="397.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints fillHeight="false" maxHeight="97.0" minHeight="0.0" prefHeight="78.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="208.0" minHeight="4.0" prefHeight="38.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="240.0" minHeight="0.0" prefHeight="39.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="110.0" minHeight="78.0" prefHeight="99.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="166.0" minHeight="44.0" prefHeight="132.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="250.0" minHeight="44.0" prefHeight="99.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="250.0" minHeight="44.0" prefHeight="45.0" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label text="Website Name" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="41.0" text="Website URL" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="75.0" text="Owner" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="109.0" text="Site Description" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField alignment="TOP_LEFT" layoutX="146.0" layoutY="17.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Site Theme / Niche / Area." GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="267.0" promptText="Site Name" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField alignment="TOP_LEFT" layoutX="141.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Domail URL" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField alignment="TOP_LEFT" layoutX="141.0" layoutY="138.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Personal &amp; Site Values." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label layoutX="20.0" layoutY="143.0" prefHeight="17.0" prefWidth="209.0" text="Values &amp; Information" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="242.0" prefHeight="17.0" prefWidth="209.0" text="Tagcrowd" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField alignment="TOP_LEFT" layoutX="147.0" layoutY="242.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="865.0" promptText="Most common words." GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+                  <Label prefHeight="17.0" prefWidth="111.0" text="Email Contact" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" promptText="Search Blogger" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                  <Label prefHeight="27.0" prefWidth="134.0" text="When To Send" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="111.0" text="Observation" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField alignment="TOP_LEFT" layoutX="100.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="561.0" promptText="Strategies, Patterns, Notes &amp; Observations." GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets left="25.0" top="40.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Who is?" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+                  <TextField alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="\@mail.com" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <TextField alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Time (AM / PM)" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label layoutX="20.0" layoutY="106.0" text="Choose Blogger" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ComboBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="25.0" GridPane.columnIndex="1" GridPane.valignment="TOP" />
+                  <Label prefHeight="27.0" prefWidth="164.0" text="Blog Commenting" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" text="Show Comments" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </GridPane>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Blogger Data">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <GridPane hgap="5.0" layoutX="18.0" layoutY="689.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="1049.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="198.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="142.0" prefWidth="410.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="88.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="104.0" prefWidth="142.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints fillHeight="false" maxHeight="100.0" minHeight="10.0" prefHeight="38.0" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="40.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="40.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="255.0" text="Link Campaign Page">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="15.0" top="-0.0" />
+                     </GridPane.margin>
+                      </Label>
+                  <Label layoutX="41.0" layoutY="50.0" text="DA:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="48.0" text="PA:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField layoutX="74.0" layoutY="44.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label layoutX="81.0" layoutY="50.0" text="Page Link for Target:" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField alignment="TOP_LEFT" blendMode="RED" layoutX="220.0" layoutY="46.0" prefHeight="20.0" prefWidth="367.0" promptText="Their Page" GridPane.columnIndex="5" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Label prefHeight="27.0" prefWidth="55.0" text="Status:" BorderPane.alignment="CENTER_RIGHT" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <BorderPane.margin>
+                        <Insets right="15.0" />
+                     </BorderPane.margin>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField maxWidth="-Infinity" prefHeight="20.0" prefWidth="115.0" promptText="Status" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <TextField alignment="TOP_LEFT" blendMode="GREEN" prefHeight="20.0" prefWidth="253.0" promptText="My Page" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label layoutX="254.0" layoutY="123.0" text="Page Link for Source:" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin></Label>
+                  <Label text="For Article (Title):" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField prefHeight="20.0" prefWidth="397.0" promptText="Article Title" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </GridPane>
+            <Label layoutX="18.0" layoutY="899.0" prefHeight="27.0" prefWidth="159.0" text="Email Exchanges">
+               <padding>
+                  <Insets left="15.0" top="10.0" />
+               </padding></Label>
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <VBox prefHeight="950.0" prefWidth="437.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Link Targets">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label text="Select Article (Sheet)">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox prefHeight="39.0" prefWidth="337.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label layoutX="30.0" layoutY="66.0" text="Search">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField>
+               <VBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TableView prefHeight="652.0" prefWidth="368.0">
+              <columns>
+                <TableColumn prefWidth="83.0" text="State" />
+                <TableColumn prefWidth="323.0" text="Link Target" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="15.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </TableView>
+            <Button mnemonicParsing="false" text="Update View" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

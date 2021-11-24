@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" scaleShape="false" stylesheets="@Style.css" tabMaxHeight="1200.0" tabMaxWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <tabs>
+      <Tab closable="false" text="Blogs">
+         <content>
+            <GridPane prefHeight="857.0" prefWidth="1260.0" style="-fx-background-color: #404244;">
+               <children>
+                  <VBox spacing="20.0" stylesheets="@Style.css" GridPane.columnIndex="1">
+                     <children>
+                        <VBox spacing="20.0">
+                           <children>
+                              <Label styleClass="label_Section_RED" text="Link Targets" textFill="#cccccc">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="comboBox_LinkTargets" onAction="#select_LinkTarget_from_BlogComboBox" promptText="Select Link Target" style="-fx-border-color: #ff997c; -fx-text-fill: #ff997c;" styleClass="combo-box-Red" stylesheets="@Style.css">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <TableView fx:id="tableView_LinkTarget" onMouseClicked="#select_LinkTarget_from_BlogTableView" style="-fx-border-color: #ff997c; -fx-text-fill: #ff997c; -fx-text-fill-selected: #404244;" styleClass="table-view_Red" stylesheets="@Style.css">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="30.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <Accordion style="-fx-background-color: #404244;" stylesheets="@Style.css">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="30.0" />
+                                 </VBox.margin>
+                                 <panes>
+                                    <TitledPane animated="false" stylesheets="@Style.css" text=" Compose &amp; Add Email for Link Target">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #404244;">
+                                             <children>
+                                                <VBox layoutX="28.6" layoutY="29.6" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                                   <children>
+                                                      <TextArea fx:id="textArea_blLtEmailThread" promptText="Write and Add to Email Thread" stylesheets="@Text-Area.css">
+                                                         <effect>
+                                                            <InnerShadow choke="0.05" color="#00000099" />
+                                                         </effect>
+                                                      </TextArea>
+                                                      <Button fx:id="button_AppendEmail" mnemonicParsing="false" onAction="#append_Email_Thread_to_Link_Target" styleClass="buttons_Append" stylesheets="@Style.css" text="Append Email" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                           </children>
+                           <padding>
+                              <Insets right="40.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox GridPane.halignment="LEFT">
+                     <children>
+                        <GridPane hgap="10.0" style="-fx-background-color: #404244;" vgap="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints percentWidth="15.0" />
+                              <ColumnConstraints percentWidth="40.0" />
+                              <ColumnConstraints percentWidth="45.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints percentHeight="0.0" />
+                              <RowConstraints fillHeight="false" maxHeight="97.0" minHeight="0.0" prefHeight="72.0" valignment="CENTER" vgrow="NEVER" />
+                              <RowConstraints maxHeight="208.0" minHeight="4.0" prefHeight="36.0" vgrow="NEVER" />
+                              <RowConstraints maxHeight="240.0" minHeight="0.0" prefHeight="31.0" vgrow="NEVER" />
+                              <RowConstraints maxHeight="160.0" minHeight="12.0" prefHeight="97.0" vgrow="NEVER" />
+                              <RowConstraints maxHeight="189.0" minHeight="44.0" prefHeight="111.0" vgrow="NEVER" />
+                              <RowConstraints maxHeight="352.0" minHeight="44.0" prefHeight="110.0" vgrow="NEVER" />
+                              <RowConstraints maxHeight="393.0" minHeight="44.0" prefHeight="224.0" vgrow="NEVER" />
+                           </rowConstraints>
+                           <children>
+                              <Label stylesheets="@Style.css" text="Blog Name" textFill="#cccccc" wrapText="true" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="41.0" stylesheets="@Style.css" text="Website URL" textFill="#cccccc" wrapText="true" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="75.0" stylesheets="@Style.css" text="Owner" textFill="#cccccc" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets left="25.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="109.0" stylesheets="@Style.css" text="Site Description" textFill="#cccccc" wrapText="true" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textField_blogName" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="BlogName" styleClass="text_field_blogName" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="textField_blogWebsiteURL" alignment="TOP_LEFT" layoutX="141.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Domail URL" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <effect>
+                                    <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#000000a6" />
+                                 </effect>
+                              </TextField>
+                              <Label layoutX="20.0" layoutY="143.0" stylesheets="@Style.css" text="Values &amp; Information" textFill="#cccccc" wrapText="true" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="242.0" prefHeight="17.0" prefWidth="209.0" stylesheets="@Style.css" text="Tagcrowd" textFill="#cccccc" wrapText="true" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="17.0" stylesheets="@Style.css" text="Email Contact" textFill="#cccccc" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="25.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textField_SearchBlog" minHeight="-Infinity" minWidth="-Infinity" onAction="#searchBlogData_From_TextField" promptText="Search Blogger" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <effect>
+                                    <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextField>
+                              <Label prefHeight="27.0" stylesheets="@Style.css" text="When To Send" textFill="#cccccc" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="25.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textField_blogOwner" alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Who is?" stylesheets="@Style.css" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets left="130.0" />
+                                 </GridPane.margin>
+                                 <effect>
+                                    <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="textField_blogEmailContact" alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" promptText="\@mail.com" stylesheets="@Style.css" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets left="130.0" />
+                                 </GridPane.margin>
+                                 <effect>
+                                    <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="textField_blogWhenToSend" alignment="TOP_LEFT" layoutX="159.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" promptText="Time (AM / PM)" stylesheets="@Style.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="130.0" />
+                                 </GridPane.margin>
+                                 <effect>
+                                    <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextField>
+                              <Label layoutX="20.0" layoutY="106.0" stylesheets="@Style.css" text="Choose Blogger" textFill="#cccccc" wrapText="true" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="comboBox_BlogData" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#select_Blog_Fill_All_TextFields" promptText="Select a Blog" styleClass="combo-box_Orange" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                              <Label stylesheets="@Style.css" text="Strategy and Intel" textFill="#cccccc" wrapText="true" GridPane.columnSpan="2" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="label_Section" text="Blogger Data" textFill="#cccccc" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                              </Label>
+                              <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="598.0" prefWidth="344.0" style="-fx-background-color: #404244;" stylesheets="@Style.css" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                                 <panes>
+                                    <TitledPane animated="false" styleClass="titled-pane_Orange" stylesheets="@Style.css" text=" User Comments On Site">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #404244;">
+                                             <children>
+                                                <VBox layoutX="28.6" layoutY="29.6" prefHeight="505.0" prefWidth="381.0" spacing="20.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                                   <children>
+                                                      <TextArea fx:id="textArea_blogCommentsOnSite" prefHeight="577.0" promptText="User Comments.">
+                                                         <effect>
+                                                            <InnerShadow choke="0.05" color="#00000099" />
+                                                         </effect>
+                                                         <stylesheets>
+                                                            <URL value="@Text-Area.css" />
+                                                            <URL value="@Text-Area.css" />
+                                                         </stylesheets>
+                                                      </TextArea>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                 </panes>
+                                 <GridPane.margin>
+                                    <Insets left="25.0" />
+                                 </GridPane.margin>
+                              </Accordion>
+                              <TextArea fx:id="textArea_blogSiteDescription" promptText="Site Description" stylesheets="@Text-Area.css" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextArea>
+                              <TextArea fx:id="textArea_blogValuesInfo" promptText="Dominating Values" stylesheets="@Text-Area.css" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextArea>
+                              <TextArea fx:id="textArea_blogTagcrowd" promptText="Tagcrowd" stylesheets="@Text-Area.css" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextArea>
+                              <TextArea fx:id="textArea_blogStrategiesIntel" promptText="Strategies, Patterns, Notes &amp; Observations. Best approach to getting a link." stylesheets="@Text-Area.css" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextArea>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox fillHeight="false" spacing="20.0">
+                           <children>
+                              <Button fx:id="button_OpenFile" contentDisplay="CENTER" mnemonicParsing="false" onAction="#open_File" styleClass="buttons_Hard" stylesheets="@Style.css" text="Open File" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#save_All" styleClass="buttons_Hard" stylesheets="@Style.css" text="Save All" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#see_All" text="See All">
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#clear_Controls_Blog" styleClass="buttons_Hard" stylesheets="@Style.css" text="Clear" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="40.0" top="40.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </GridPane.margin>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" percentWidth="50.0" />
+                  <ColumnConstraints hgrow="NEVER" percentWidth="50.0" />
+                  <ColumnConstraints percentWidth="0.0" />
+                  <ColumnConstraints percentWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints percentHeight="0.0" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Link Campaigns">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="864.0" prefWidth="1361.0">
+               <children>
+                  <HBox layoutX="-31.0" prefWidth="0.0" spacing="25.0" AnchorPane.bottomAnchor="987.0" AnchorPane.leftAnchor="-31.0" AnchorPane.rightAnchor="1527.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="901.0" prefWidth="782.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="302.0" styleClass="label_Section" text="Existing Link Campaigns">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="851.0" prefWidth="758.0" spacing="10.0">
+                                 <children>
+                                    <TableView fx:id="tableView_LT_Articles" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#select_Article_For_List_Of_LinkTargets" prefHeight="851.0" prefWidth="291.0" />
+                                    <TableView fx:id="tableView_LT_Properties" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#select_Link_Campaign" prefHeight="851.0" prefWidth="563.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="587.0" prefWidth="525.0" spacing="25.0">
+                           <children>
+                              <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="255.0" styleClass="label_Section" text="Add New Link Campaign" textFill="#cccccc">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="525.0" vgap="8.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints fillWidth="false" hgrow="NEVER" maxWidth="239.0" minWidth="-Infinity" prefWidth="153.0" />
+                                    <ColumnConstraints hgrow="NEVER" minWidth="142.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="23.0" vgrow="ALWAYS" />
+                                    <RowConstraints maxHeight="39.0" minHeight="-Infinity" prefHeight="28.0" vgrow="ALWAYS" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="25.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="31.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="27.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="79.0" vgrow="ALWAYS" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label layoutX="41.0" layoutY="50.0" stylesheets="@Style.css" text="DA:" textFill="#cccccc" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="25.0" right="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label layoutX="33.0" layoutY="48.0" stylesheets="@Style.css" text="PA:" textFill="#cccccc" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="140.0" right="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textField_ltDA" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.vgrow="NEVER">
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                    <TextField fx:id="textField_ltPA" layoutX="74.0" layoutY="44.0" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="175.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                    <Label layoutX="81.0" layoutY="50.0" stylesheets="@Style.css" text="Page Link for Target:" textFill="#cccccc" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textField_ltPageLinkTargetTheirs" alignment="TOP_LEFT" layoutX="220.0" layoutY="46.0" prefHeight="33.0" prefWidth="364.0" promptText="Their Page" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                    <Label prefHeight="27.0" prefWidth="55.0" stylesheets="@Style.css" text="Status:" textFill="#cccccc" BorderPane.alignment="CENTER_RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                       <BorderPane.margin>
+                                          <Insets right="15.0" />
+                                       </BorderPane.margin>
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="choiceBox_EnumLtStatus" prefHeight="32.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <HBox spacing="20.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                                       <children>
+                                          <Button fx:id="button_ModifyLT" depthTest="DISABLE" mnemonicParsing="false" onAction="#modify_Link_Campaign" styleClass="buttons_Soft" stylesheets="@Style.css" text="Modify" />
+                                          <Button fx:id="button_AddLT" mnemonicParsing="false" onAction="#add_New_Link_Campaign" styleClass="buttons_Soft" stylesheets="@Style.css" text="Add New LT" />
+                                          <Button fx:id="button_RemoveLT" mnemonicParsing="false" onAction="#remove_Link_Campaign" styleClass="buttons_Soft" stylesheets="@Style.css" text="Remove LT" />
+                                          <Button fx:id="button_RemoveLT1" mnemonicParsing="false" onAction="#clear_Controls_Link_Targets" styleClass="buttons_Soft" stylesheets="@Style.css" text="Clear" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets bottom="25.0" top="25.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <Label stylesheets="@Style.css" text="For Blog:" textFill="#cccccc" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboBox_CampaignBlog" onAction="#select_Blog_from_ComboBox_for_LinkCampaignCreation" prefHeight="32.0" prefWidth="406.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label stylesheets="@Style.css" text="Choose Article:" textFill="#cccccc" GridPane.halignment="LEFT">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboBox_Articles" layoutX="171.0" layoutY="233.0" onAction="#select_Article_from_ComboBox_for_LinkCampaignCreation" prefHeight="32.0" prefWidth="388.0" GridPane.columnIndex="1" />
+                                    <Label layoutX="25.0" layoutY="169.0" stylesheets="@Style.css" text="Article Page Link :" textFill="#cccccc" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <TextField fx:id="textField_ltPageLinkSourceMine" alignment="TOP_LEFT" editable="false" layoutX="171.0" layoutY="166.0" prefHeight="33.0" prefWidth="364.0" promptText="My Page" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </GridPane>
+                              <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="476.0" prefWidth="525.0" style="-fx-background-color: #404244;" stylesheets="@Style.css">
+                                 <panes>
+                                    <TitledPane animated="false" prefHeight="462.0" prefWidth="525.0" styleClass="titled-pane_Orange" stylesheets="@Style.css" text=" Email Exchanges">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #404244;">
+                                             <children>
+                                                <VBox layoutX="28.6" layoutY="29.6" prefHeight="505.0" prefWidth="381.0" spacing="20.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                                   <children>
+                                                      <TextArea fx:id="textArea_ltEmailExchanges" prefHeight="481.0" prefWidth="490.0" promptText="All Email Exhanges for Link Target" stylesheets="@Text-Area.css">
+                                                         <effect>
+                                                            <InnerShadow choke="0.05" color="#00000099" />
+                                                         </effect>
+                                                      </TextArea>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox layoutX="577.0" layoutY="45.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="227.0" spacing="35.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="70.0" right="20.0" top="35.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="Articles">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox spacing="25.0">
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="901.0" prefWidth="368.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="221.0" styleClass="label_Section" text="Articles">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="851.0" prefWidth="483.0" spacing="10.0">
+                                 <children>
+                                    <TableView fx:id="tableView_Articles" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#select_Article" prefHeight="851.0" prefWidth="718.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="25.0">
+                           <children>
+                              <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="255.0" styleClass="label_Section" text="Operations" textFill="#cccccc">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="124.0" prefWidth="509.0" vgap="8.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints fillWidth="false" hgrow="NEVER" maxWidth="239.0" minWidth="-Infinity" prefWidth="153.0" />
+                                    <ColumnConstraints hgrow="NEVER" minWidth="142.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="29.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="27.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="textField_artArticlePageLink" alignment="TOP_LEFT" prefHeight="20.0" prefWidth="253.0" promptText="My Page" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                    <Label layoutX="254.0" layoutY="123.0" stylesheets="@Style.css" text="Page Link Article:" textFill="#cccccc" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label stylesheets="@Style.css" text="Article Title:" textFill="#cccccc" GridPane.halignment="LEFT">
+                                       <GridPane.margin>
+                                          <Insets left="15.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textField_artArticleTitle" prefHeight="20.0" prefWidth="397.0" promptText="Article Title" styleClass="text_field_LinkTarget" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                    <HBox spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button fx:id="button_ModifyArticle" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#modify_Article" styleClass="buttons_Soft" stylesheets="@Style.css" text="Modify" />
+                                          <Button fx:id="button_AddNewArticle" mnemonicParsing="false" onAction="#add_New_Article" styleClass="buttons_Soft" stylesheets="@Style.css" text="Add New Article" />
+                                          <Button fx:id="button_AddNewArticle2" layoutX="65.0" layoutY="10.0" mnemonicParsing="false" onAction="#remove_Article" styleClass="buttons_Soft" stylesheets="@Style.css" text="Remove Article" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets bottom="25.0" top="25.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </GridPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox layoutX="577.0" layoutY="45.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="901.0" prefWidth="284.0" spacing="35.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="35.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="Collection Campaigns">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox layoutX="52.0" layoutY="151.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="926.0" prefWidth="1436.0" spacing="30.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="35.0">
+                     <children>
+                        <VBox prefWidth="764.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="27.0" prefWidth="771.0" spacing="30.0">
+                                 <children>
+                                    <Label stylesheets="@Style.css" text="Search for Link Campaign:" textFill="#cccccc">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textField_SearchLinkTarget" onAction="#search_LinkTarget_From_TextField" prefHeight="27.0" prefWidth="565.0" promptText="Search for LInk Target">
+                                       <effect>
+                                          <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#00000099" />
+                                       </effect>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <TableView fx:id="tableView_CollectionCampaign" onMouseClicked="#select_Link_Campaign_From_Collection_Campaign" prefHeight="877.0" prefWidth="760.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="929.0" prefWidth="635.0" spacing="30.0">
+                           <children>
+                              <TextArea fx:id="textArea_CollCampaign" prefHeight="879.0" prefWidth="631.0" promptText="Full Email Exchanges." stylesheets="@Text-Area.css">
+                                 <effect>
+                                    <InnerShadow choke="0.05" color="#00000099" />
+                                 </effect>
+                              </TextArea>
+                              <Button fx:id="button_ModifyCollCampaign" mnemonicParsing="false" styleClass="buttons_Soft" stylesheets="@Style.css" text="Modify Email Exchange" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children></HBox>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</TabPane>

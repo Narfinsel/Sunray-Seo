@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../__Java_Libraries/jexcelapi_2_6_12.tar" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../__Java_Libraries/jexcelapi_2_6_12.tar/jexcelapi/docs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../__Java_Libraries/jexcelapi_2_6_12.tar/jexcelapi/build" />
+          <root url="file://$MODULE_DIR$/../../__Java_Libraries/jexcelapi_2_6_12.tar/jexcelapi/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/PoiLibs_add-to-project-3.17" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/PoiLibs_add-to-project-3.17" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/commons-lang3-3.7" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/commons-lang3-3.7/apidocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/commons-lang3-3.7" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/commons-lang3-3.7" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../__JDK/ExcellLibs/commons-lang3-3.7" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="controlsfx-9.0" level="project" />
+  </component>
+</module>
