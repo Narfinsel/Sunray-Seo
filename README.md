@@ -12,7 +12,7 @@ SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Bui
 <h3>Features</h3>
 <p align="center" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/img/Image1_Blog.PNG">
-    <img src="/img/Image1_Blog.PNG" alt="Size Limit CLI" width="738" style="max-width: 100%;">
+    <img src="/img/Image1_Blog.PNG" alt="Image Blogger Data" width="738" style="max-width: 100%;">
   </a>
 </p>
 <ul>
@@ -30,15 +30,15 @@ SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Bui
       <tr>
         <td>
           <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/Image1_Blog.PNG">
-              <img src="/img/Image1_Blog.PNG" alt="Size Limit CLI" width="738" style="max-width: 100%;">
+            <a target="_blank" rel="noopener noreferrer" href="/img/Image2_LinkCampaign.PNG">
+              <img src="/img/Image2_LinkCampaign.PNG" alt="Image Link Campaign" width="738" style="max-width: 100%;">
             </a>
           </p>
         </td>
         <td>
           <p align="center" dir="auto">
-            <a target="_blank" rel="noopener noreferrer" href="/img/Image1_Blog.PNG">
-              <img src="/img/Image1_Blog.PNG" alt="Size Limit CLI" width="738" style="max-width: 100%;">
+            <a target="_blank" rel="noopener noreferrer" href="/img/Image3_Articles.PNG">
+              <img src="/img/Image3_Articles.PNG" alt="Image Article Guest Post" width="738" style="max-width: 100%;">
             </a>
           </p>
         </td>
