@@ -10,6 +10,7 @@ SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Bui
 
 
 <h3>Features</h3>
+<p>Descriptive list of applications features, attributes, and behaviours. This shall helps you understand how to use my app, meaning of different terms, editing relationship and even understanding the basic concept of link-building.</p>
 <p align="center" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/img/Image1_Blog.PNG">
     <img src="/img/Image1_Blog.PNG" alt="Image Blogger Data" width="738" style="max-width: 100%;">
@@ -44,6 +45,13 @@ SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Bui
         </td>
       </tr>
 </table>
+<ul>
+  <li>All blogs data, article guest posts, and link-building campaigns are saved to an excell file. </li>
+  <li>Application imports, exports, use, modify, and works with excell files. </li>
+  <li>Data completely indepent from the desktop SunraySeo application. </li>
+  <li>Easy to edit outside of your application, just tap into the excell and change text. But be carefull - do NOT change title and url names and link from outside of application. Only descriptive data.</li>
+  <li>This application only works with excell files. Opening, saving, editing.</li>
+</ul>  
 
 <h2>License</h2>
 NOTE: SunraySeo is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a> license. Free to use, please check associated link for more information on permissions, rights and use.
