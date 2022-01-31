@@ -8,8 +8,8 @@ This application is targeted towards blogger, website owners, digital marketers 
 
 <h3>Features/h3>
 <p align="center" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="/Narfinsel/SunraySeo/blob/master/img/Image1_Blog.PNG">
-    <img src="/Narfinsel/SunraySeo/blob/master/img/Image1_Blog.PNG" alt="Size Limit CLI" width="738" style="max-width: 100%;">
+  <a target="_blank" rel="noopener noreferrer" href="/img/Image1_Blog.PNG">
+    <img src="/img/Image1_Blog.PNG" alt="Size Limit CLI" width="738" style="max-width: 100%;">
   </a>
 </p>
   
