@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/Image1_Blog.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Image2_LinkCampaign.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Image3_Articles.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Image4_Collection.PNG" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Initial Commit:&#10;To further improve main-window scaling &amp; resizing constraints.&#10;To add more websites, links, articles in the xls file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/LT - Copy - Backup.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/LT - Copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExcellSheets/LT - Copy.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/LT.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/LT_old.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/LT_saved.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExcellSheets/Link_Campaign--VT.xlsx" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,7 +135,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -2844,6 +2834,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2856,7 +2847,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2874,7 +2864,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -2935,7 +2925,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1643650043685" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1643653566555" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2959,7 +2949,7 @@
       </Profilers>
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1643650043687" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1643653566555" />
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -3064,7 +3054,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.4283688" side_tool="true" weight="0.37526652" />
       <window_info id="Favorites" order="1" sideWeight="0.4283688" side_tool="true" weight="0.37526652" />
@@ -3072,20 +3062,20 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5716312" visible="true" weight="0.24733475" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5716312" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.7264875" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.2274678" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.2274678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32832617" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49520257" weight="0.3298479" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.619403" visible="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.2274678" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.38059703" side_tool="true" visible="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.2428023" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946696" weight="0.17205323" />
       <window_info anchor="bottom" id="Analyze Dataflow to" order="15" weight="0.32917467" />
@@ -3270,12 +3260,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/UI_SunraySEO_BlogData.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="4777">
           <caret line="281" column="79" selection-start-line="281" selection-start-column="79" selection-end-line="281" selection-end-column="79" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datamodel/_GLOBAL_constants.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3285,28 +3275,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/UI_Dark_SunraySEO_BlogData.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/sample.fxml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datamodel/LinkTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
-          <folding>
-            <element signature="method#LinkTarget#0;class#LinkTarget#0" />
-            <element signature="method#LinkTarget#1;class#LinkTarget#0" />
-            <element signature="method#displayLinkTarget#0;class#LinkTarget#0" />
-            <element signature="method#stringToColNumber#0;class#LinkTarget#0" />
-            <element signature="method#convertCellValueToInt#0;class#LinkTarget#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3328,14 +3311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4037">
           <caret line="267" column="40" selection-start-line="267" selection-start-column="40" selection-end-line="267" selection-end-column="40" />
-          <folding>
-            <element signature="method#Listwork#0;class#Listwork#0" />
-            <element signature="e#3050#3116#0" />
-            <element signature="method#workbookFromList#0;class#Listwork#0" />
-            <element signature="method#add_Blog#0;class#Listwork#0" />
-            <element signature="method#modify_Blog#0;class#Listwork#0" />
-            <element signature="method#findLinkTarget#0;class#Listwork#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3343,20 +3318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="method#Article#0;class#Article#0" />
-            <element signature="method#Article#1;class#Article#0" />
-            <element signature="method#stringToColNumber#0;class#Article#0" />
-            <element signature="method#convertToString#0;class#Article#0" />
-            <element signature="method#da_pa_Correct_String_Format#0;class#Article#0" />
-            <element signature="method#convertCellValueToInt#0;class#Article#0" />
-            <element signature="method#convertArticleToXSSFRow#0;class#Article#0" />
-            <element signature="method#displayArticleData#0;class#Article#0" />
-            <element signature="method#getArtArticleTitle#0;class#Article#0" />
-            <element signature="method#setArtNbrCrt#0;class#Article#0" />
-            <element signature="method#setArtArticleTitle#0;class#Article#0" />
-            <element signature="method#setArtPageLinkForArticle#0;class#Article#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3364,9 +3325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
