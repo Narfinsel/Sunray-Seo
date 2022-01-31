@@ -22,6 +22,9 @@ SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Bui
   <li>List link-target pages (guest-posts for one of the blogs, and guest-post contains backlinks to your own site), pertaining to a major link building campaign. </li>
   <li>List all the existing link-building campaigns, irrespective to which blog they belong. </li>
   <li>Create/ Add /Remove / Modify link-building campaigns. A link building campaign asssociates a personal webpage (Article) with a guest-post (link-target, webpage on a blog). The aim is to get a backlink from the guest-post, to my own article.</li>
+  <li>Edit link-target DA/PA (google search algo metrics) and completion status for your campaign. </li>
+  <li>Create/ Add /Remove / Modify guest-post options. This only involves a title and a link. </li>
+  <li>List link building-campaigns, or guest-post to link-target associations. View entire email exhange for any particular campaign. </li>
 </ul>
 
 
