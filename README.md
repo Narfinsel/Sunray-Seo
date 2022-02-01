@@ -1,10 +1,10 @@
 <h1>SunraySeo</h1>
-<table>
+<table border="none">
   <tr>
-    <td width=30%>
+    <td width=20%>
       <img src="out/production/SunraySeo/graphics/SuncastSEO_1.png" alt="Image SunraySeo Logo" width="125" style="max-width: 30%;">
     </td>
-    <td width=70%>
+    <td width=80%>
       <p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). </p>
     </td>
   </tr>
