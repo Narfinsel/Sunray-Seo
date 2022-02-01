@@ -1,5 +1,6 @@
 <h1>SunraySeo</h1>
-SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization).
+<img src="out/production/SunraySeo/graphics/SuncastSEO_1.png" alt="Image SunraySeo Logo" width="125" style="max-width: 30%;">
+<p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). </p>
 
 <h2>Description</h2>
 
