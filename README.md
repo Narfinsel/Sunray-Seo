@@ -1,16 +1,6 @@
-<h1>SunraySeo</h1>
-<table border="none">
-  <tr style="border: none;">
-    <td width=20% style="border: none;">
-      <img src="out/production/SunraySeo/graphics/SuncastSEO_1.png" alt="Image SunraySeo Logo" width="125" style="max-width: 30%;">
-    </td>
-    <td width=80% style="border: none;">
-      <p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). </p>
-    </td>
-  </tr>
-</table>
 <img src="out/production/SunraySeo/graphics/SuncastSEO_1.png" alt="Image SunraySeo Logo" width="125" style="max-width: 30%;">
-<p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). </p>
+<p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). This is done of course, by finding new blogs for outreach, establishing a relationship with the blogger, and writing guest-post with backlinkgs to your own website.</p>
+<p>Guest-posting is the best way to obtain high-quality backlinks for you blogs and pages, if you want them to rank in the top search result position in search engines like Google, DuckDuckGo, Yahoo, and many other more.</p>
 
 <h2>Description</h2>
 
@@ -66,9 +56,3 @@
 
 <h2>License</h2>
 NOTE: SunraySeo is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a> license. Free to use, please check associated link for more information on permissions, rights and use.
-
-
-<style>
-table, tr {border:hidden;}
-td, th {border:hidden;}
-</style>
