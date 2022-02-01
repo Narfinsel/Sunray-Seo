@@ -68,5 +68,5 @@
 NOTE: SunraySeo is licensed under the <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a> license. Free to use, please check associated link for more information on permissions, rights and use.
 
 <style>
-table{ border-collapse: collapse; }
+table{ border:none !important; }
 </style>
