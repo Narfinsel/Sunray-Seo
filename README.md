@@ -1,3 +1,9 @@
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
 <img src="out/production/SunraySeo/graphics/SuncastSEO_1.png" alt="Image SunraySeo Logo" width="125" style="max-width: 30%;">
 <p>SunraySeo is a custom-made desktop app, specialized in strategizing Seo Link-Building Campaigns (search engine optimization). This is done of course, by finding new blogs for outreach, establishing a relationship with the blogger, and writing guest-post with backlinkgs to your own website.</p>
 <p>Guest-posting is the best way to obtain high-quality backlinks for you blogs and pages, if you want them to rank in the top search result position in search engines like Google, DuckDuckGo, Yahoo, and many other more.</p>
